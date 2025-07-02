@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="virtualRating.css">
+    <title>Document</title>
+</head>
+<body>
+     <div id="header">
+     <h1 >Codeforces Visualizer</h1>
+     <button class="nav-button"> Home </button>
+     <button class="nav-button"> About us </button>
+     <button class="nav-button"> Compare </button>
+     <button class="nav-button"> convert to pdf </button>
+    </div>
+    <h2 id="heading">Virtual Rating Calculation</h2>
+    <div id="form">
+         <form action="virtualRating.html" method="post">
+            <label for="contest">Enter the contest ID:</label>
+            <input type="text" id="contest" name="contest" required>
+            <label for="handle">Enter your handle:</label>
+            <input type="text" id="handle" name="handle" required>
+            <label for="rating">Enter your rating:</label>
+            <input type="number" id="rating" name="rating" required> 
+            <label for="rank">Enter your rank:</label>
+            <input type="text" id="rank" name="rank" required>  
+            <label for="virtualRating">Enter your virtual rating:</label>
+            <input type="number" id="virtualRating" name="virtualRating" required>
+                   
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

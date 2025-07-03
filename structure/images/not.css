@@ -1,0 +1,76 @@
+body { 
+  margin: 0;
+  padding: 0;
+background-color: rgb(250, 247, 247);
+justify-content:  center;
+}
+
+.handle {
+  background-color: rgb(250, 247, 247);
+  height: 70px;
+  border-bottom: 0.5px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+.app-name {
+  color: grey;
+  font-size: 24px;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons button {
+  background-color: rgb(248, 244, 244);
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px; 
+}
+
+.buttons button:hover {
+  background-color: rgb(109, 108, 108);
+}
+
+.image1,.image2,.image3,.image4 {
+  height: 20px;
+  width: 20px;
+}
+
+.container {
+  height: 120px;
+  margin-top: -10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 720px;
+  justify-self: center;
+}
+
+.data input {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding-bottom: 3px;
+}
+
+.data input:focus {
+    outline: none;
+  border-bottom: 2px solid rgb(4, 173, 251);
+}

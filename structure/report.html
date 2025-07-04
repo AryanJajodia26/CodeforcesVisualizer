@@ -11,19 +11,25 @@
     <div id="header">
       <h1>Codeforces Visualizer Report</h1>
       <div class="nav-buttons">
-        <button type="button" class="nav-button button1">Home</button>
-        <button type="button" class="nav-button">About Us</button>
-        <button type="button" class="nav-button">Compare</button>
-        <button type="button" class="nav-button">Convert to PDF</button>
+        <button  class="nav-button button1">Home</button>
+        <button  class="nav-button">About Us</button>
+        <button  class="nav-button">Compare</button>
+        <button  class="nav-button">Convert to PDF</button>
       </div>
     </div>
 
-    <div class="chart-left">
-  <canvas id="myChart"></canvas>
-</div>
+    <div class="chart1-container">
+      <h2>User Info (Current vs Max Rating)</h2>
+      <canvas id="userChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+      <h2>Solved Problems Per Rating</h2>
+      <canvas id="solvedChart"></canvas>
+    </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
-  <script src="report.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="chart1.js" defer></script>
 </body>
 </html>

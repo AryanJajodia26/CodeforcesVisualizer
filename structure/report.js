@@ -1,15 +1,9 @@
 const cfid    = document.querySelector('#cfid');
 const err     = document.querySelector('.error');
 const button  = document.querySelector('.entered');
-const btnHome = document.querySelector('.button1');
-
-btnHome.addEventListener('click', e => {
-  window.location.assign('./home.html');
-});
 
 button.addEventListener('click', async () => {
-  console.log('Compare clicked!');
-   const handle = cfid.value.trim();
+  const handle = cfid.value.trim();
   err.textContent = '';
 
   if (!handle) {
@@ -19,7 +13,7 @@ button.addEventListener('click', async () => {
   }
 
   try {
-    const response = await fetch(`https://codeforces.com/api/user.info?handles=${handle}`);
+    const response = await fetch(`https://codeforces.com/api/user.info?handles=${encodeURIComponent(handle)}`);
     const data = await response.json();
 
     if (data.status !== 'OK') {

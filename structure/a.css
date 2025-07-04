@@ -111,8 +111,8 @@
   position: absolute;
   top: 5rem;
   left: 1rem;
-  width: 500px;    /* desired width */
-  height: 350px;   /* desired height */
+  width: 500px;    
+  height: 250px;  
 }
 
 .chart-left #myChart {

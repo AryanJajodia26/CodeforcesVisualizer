@@ -9,7 +9,7 @@ btnHome.addEventListener('click', e => {
 
 button.addEventListener('click', async () => {
   console.log('Compare clicked!');
-  const handle = cfid.value.trim();
+   const handle = cfid.value.trim();
   err.textContent = '';
 
   if (!handle) {
@@ -26,6 +26,7 @@ button.addEventListener('click', async () => {
       err.textContent = 'NO SUCH CODEFORCES HANDLE EXISTS!';
       err.style.color = 'red';
     } else {
+      localStorage.setItem('cf_handle', handle);
       window.location.assign('./report.html');
     }
   } catch (e) {
